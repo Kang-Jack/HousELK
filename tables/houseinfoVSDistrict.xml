@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">COUNT(*)</Data></Cell>
+			<Cell><Data ss:Type="String">district</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">2098</Data></Cell>
+			<Cell><Data ss:Type="String">东城</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">11263</Data></Cell>
+			<Cell><Data ss:Type="String">朝阳</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5900</Data></Cell>
+			<Cell><Data ss:Type="String">海淀</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4711</Data></Cell>
+			<Cell><Data ss:Type="String">丰台</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">2837</Data></Cell>
+			<Cell><Data ss:Type="String">大兴</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">4118</Data></Cell>
+			<Cell><Data ss:Type="String">昌平</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">920</Data></Cell>
+			<Cell><Data ss:Type="String">西城</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1120</Data></Cell>
+			<Cell><Data ss:Type="String">石景山</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">1807</Data></Cell>
+			<Cell><Data ss:Type="String">顺义</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">112</Data></Cell>
+			<Cell><Data ss:Type="String">亦庄开发区</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">588</Data></Cell>
+			<Cell><Data ss:Type="String">通州</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">251</Data></Cell>
+			<Cell><Data ss:Type="String">房山</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">10</Data></Cell>
+			<Cell><Data ss:Type="String">怀柔</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">81</Data></Cell>
+			<Cell><Data ss:Type="String">平谷</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">16</Data></Cell>
+			<Cell><Data ss:Type="String">密云</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">5859</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>
