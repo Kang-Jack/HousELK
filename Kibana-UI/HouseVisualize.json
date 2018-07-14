@@ -1,33 +1,5 @@
 [
   {
-    "_id": "705ee410-755f-11e8-8faf-29cae9b4a4c1",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSelling",
-      "visState": "{\n  \"title\": \"HouseSelling\",\n  \"type\": \"histogram\",\n  \"params\": {\n    \"addLegend\": true,\n    \"addTimeMarker\": false,\n    \"addTooltip\": true,\n    \"categoryAxes\": [\n      {\n        \"id\": \"CategoryAxis-1\",\n        \"labels\": {\n          \"show\": true,\n          \"truncate\": 100\n        },\n        \"position\": \"bottom\",\n        \"scale\": {\n          \"type\": \"linear\"\n        },\n        \"show\": true,\n        \"style\": {},\n        \"title\": {},\n        \"type\": \"category\"\n      }\n    ],\n    \"grid\": {\n      \"categoryLines\": false,\n      \"style\": {\n        \"color\": \"#eee\"\n      }\n    },\n    \"legendPosition\": \"right\",\n    \"seriesParams\": [\n      {\n        \"data\": {\n          \"id\": \"1\",\n          \"label\": \"Count\"\n        },\n        \"drawLinesBetweenPoints\": true,\n        \"mode\": \"stacked\",\n        \"show\": \"true\",\n        \"showCircles\": true,\n        \"type\": \"histogram\",\n        \"valueAxis\": \"ValueAxis-1\"\n      }\n    ],\n    \"times\": [],\n    \"type\": \"histogram\",\n    \"valueAxes\": [\n      {\n        \"id\": \"ValueAxis-1\",\n        \"labels\": {\n          \"filter\": false,\n          \"rotate\": 0,\n          \"show\": true,\n          \"truncate\": 100\n        },\n        \"name\": \"LeftAxis-1\",\n        \"position\": \"left\",\n        \"scale\": {\n          \"mode\": \"normal\",\n          \"type\": \"linear\"\n        },\n        \"show\": true,\n        \"style\": {},\n        \"title\": {\n          \"text\": \"Count\"\n        },\n        \"type\": \"value\"\n      }\n    ]\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"community.keyword\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"size\": 10,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ]\n}",
-      "uiStateJSON": "{\n  \"vis\": {\n    \"legendOpen\": true\n  }\n}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"4e4da050-8725-11e8-b655-7986d74da31f\",\n  \"filter\": [],\n  \"query\": {\n    \"language\": \"kuery\",\n    \"query\": \"\"\n  }\n}"
-      }
-    }
-  },
-  {
-    "_id": "a1f343a0-8512-11e8-8aa2-133a73571081",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSelectDist",
-      "visState": "{\"title\":\"HouseSelectDist\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1531317507094\",\"indexPattern\":\"5740ab10-7566-11e8-8faf-29cae9b4a4c1\",\"fieldName\":\"district.keyword\",\"parent\":\"\",\"label\":\"\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1531317668059\",\"indexPattern\":\"5740ab10-7566-11e8-8faf-29cae9b4a4c1\",\"fieldName\":\"title.keyword\",\"parent\":\"1531317507094\",\"label\":\"\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":5,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{}"
-      }
-    }
-  },
-  {
     "_id": "5dd54df0-7633-11e8-b105-3d111e9ff17b",
     "_type": "visualization",
     "_source": {
@@ -42,20 +14,6 @@
     }
   },
   {
-    "_id": "52fc5e60-779a-11e8-9800-6dd731635190",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSoldNumVsType",
-      "visState": "{\"title\":\"HouseSoldNumVsType\",\"type\":\"area\",\"params\":{\"type\":\"area\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"总销售套数\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"area\",\"mode\":\"stacked\",\"data\":{\"label\":\"总销售套数\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"总销售套数\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"dealdate\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"filter\":[],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
-      }
-    }
-  },
-  {
     "_id": "145f7620-7564-11e8-8faf-29cae9b4a4c1",
     "_type": "visualization",
     "_source": {
@@ -66,62 +24,6 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\n  \"index\": \"4e4da050-8725-11e8-b655-7986d74da31f\",\n  \"filter\": [],\n  \"query\": {\n    \"language\": \"kuery\",\n    \"query\": \"\"\n  }\n}"
-      }
-    }
-  },
-  {
-    "_id": "8257ec00-7796-11e8-9800-6dd731635190",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSelling(Top5)",
-      "visState": "{\n  \"title\": \"HouseSelling(Top5)\",\n  \"type\": \"table\",\n  \"params\": {\n    \"perPage\": 10,\n    \"showMeticsAtAllLevels\": false,\n    \"showPartialRows\": false,\n    \"showTotal\": false,\n    \"sort\": {\n      \"columnIndex\": 1,\n      \"direction\": null\n    },\n    \"totalFunc\": \"sum\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"3\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"bucket\",\n      \"params\": {\n        \"field\": \"housetype.keyword\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"size\": 6,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\",\n        \"customLabel\": \"房型\"\n      }\n    }\n  ]\n}",
-      "uiStateJSON": "{\n  \"vis\": {\n    \"params\": {\n      \"sort\": {\n        \"columnIndex\": 1,\n        \"direction\": null\n      }\n    }\n  }\n}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"4e4da050-8725-11e8-b655-7986d74da31f\",\n  \"filter\": [],\n  \"query\": {\n    \"query\": \"\",\n    \"language\": \"kuery\"\n  }\n}"
-      }
-    }
-  },
-  {
-    "_id": "58c69250-7567-11e8-8faf-29cae9b4a4c1",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseCommunityVsDistrictTop5",
-      "visState": "{\n  \"title\": \"HouseCommunityVsDistrictTop5\",\n  \"type\": \"pie\",\n  \"params\": {\n    \"addLegend\": true,\n    \"addTooltip\": true,\n    \"isDonut\": true,\n    \"labels\": {\n      \"last_level\": true,\n      \"show\": false,\n      \"truncate\": 100,\n      \"values\": true\n    },\n    \"legendPosition\": \"right\",\n    \"type\": \"pie\"\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    },\n    {\n      \"id\": \"2\",\n      \"enabled\": true,\n      \"type\": \"terms\",\n      \"schema\": \"segment\",\n      \"params\": {\n        \"field\": \"district.keyword\",\n        \"otherBucket\": false,\n        \"otherBucketLabel\": \"Other\",\n        \"missingBucket\": false,\n        \"missingBucketLabel\": \"Missing\",\n        \"size\": 6,\n        \"order\": \"desc\",\n        \"orderBy\": \"1\"\n      }\n    }\n  ]\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"36d7c450-8725-11e8-b655-7986d74da31f\",\n  \"filter\": [],\n  \"query\": {\n    \"language\": \"kuery\",\n    \"query\": \"\"\n  }\n}"
-      }
-    }
-  },
-  {
-    "_id": "4e6d6810-7634-11e8-b105-3d111e9ff17b",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSellingTotal",
-      "visState": "{\n  \"title\": \"HouseSellingTotal\",\n  \"type\": \"metric\",\n  \"params\": {\n    \"addTooltip\": true,\n    \"addLegend\": false,\n    \"type\": \"metric\",\n    \"metric\": {\n      \"percentageMode\": false,\n      \"useRanges\": false,\n      \"colorSchema\": \"Green to Red\",\n      \"metricColorMode\": \"None\",\n      \"colorsRange\": [\n        {\n          \"from\": 0,\n          \"to\": 10000\n        }\n      ],\n      \"labels\": {\n        \"show\": true\n      },\n      \"invertColors\": false,\n      \"style\": {\n        \"bgFill\": \"#000\",\n        \"bgColor\": false,\n        \"labelColor\": false,\n        \"subText\": \"\",\n        \"fontSize\": 60\n      }\n    }\n  },\n  \"aggs\": [\n    {\n      \"id\": \"1\",\n      \"enabled\": true,\n      \"type\": \"count\",\n      \"schema\": \"metric\",\n      \"params\": {}\n    }\n  ]\n}",
-      "uiStateJSON": "{}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\n  \"index\": \"4e4da050-8725-11e8-b655-7986d74da31f\",\n  \"filter\": [],\n  \"query\": {\n    \"language\": \"kuery\",\n    \"query\": \"\"\n  }\n}"
-      }
-    }
-  },
-  {
-    "_id": "f273fba0-8380-11e8-bdc1-017cdf61e293",
-    "_type": "visualization",
-    "_source": {
-      "title": "HouseSoldInfoSearchTable",
-      "visState": "{\"title\":\"HouseSoldInfoSearchTable\",\"type\":\"searchtables\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":4,\"direction\":\"desc\"},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"totalprice.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"dealdate\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
-      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":4,\"direction\":\"desc\"}}}}",
-      "description": "",
-      "version": 1,
-      "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"key\":\"dealdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"dealdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"validdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"validdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"community.keyword\",\"negate\":false,\"params\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里四区\"},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"安慧里\",\"disabled\":true,\"index\":\"90ae6770-755c-11e8-8faf-29cae9b4a4c1\",\"key\":\"community\",\"negate\":false,\"params\":{\"query\":\"安慧里\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里\"},\"query\":{\"match\":{\"community\":{\"query\":\"安慧里\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"type\":\"phrase\",\"key\":\"community.keyword\",\"value\":\"安慧里一区\",\"params\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
       }
     }
   },
@@ -149,7 +51,21 @@
       "description": "",
       "version": 1,
       "kibanaSavedObjectMeta": {
-        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"key\":\"dealdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"dealdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"validdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"validdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"community.keyword\",\"negate\":false,\"params\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里四区\"},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"安慧里\",\"disabled\":true,\"index\":\"90ae6770-755c-11e8-8faf-29cae9b4a4c1\",\"key\":\"community\",\"negate\":false,\"params\":{\"query\":\"安慧里\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里\"},\"query\":{\"match\":{\"community\":{\"query\":\"安慧里\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"type\":\"phrase\",\"key\":\"community.keyword\",\"value\":\"安慧里一区\",\"params\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"key\":\"dealdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"dealdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"validdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"validdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"community.keyword\",\"negate\":false,\"params\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里四区\"},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"安慧里\",\"disabled\":true,\"index\":\"90ae6770-755c-11e8-8faf-29cae9b4a4c1\",\"key\":\"community\",\"negate\":false,\"params\":{\"query\":\"安慧里\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里\"},\"query\":{\"match\":{\"community\":{\"query\":\"安慧里\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"type\":\"phrase\",\"key\":\"community.keyword\",\"value\":\"安慧里一区\",\"params\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"issold.keyword\",\"value\":\"no\",\"params\":{\"query\":\"no\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"issold.keyword\":{\"query\":\"no\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "705ee410-755f-11e8-8faf-29cae9b4a4c1",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSelling",
+      "visState": "{\"title\":\"HouseSelling\",\"type\":\"histogram\",\"params\":{\"addLegend\":true,\"addTimeMarker\":false,\"addTooltip\":true,\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"labels\":{\"show\":true,\"truncate\":100},\"position\":\"bottom\",\"scale\":{\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{},\"type\":\"category\"}],\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"legendPosition\":\"right\",\"seriesParams\":[{\"data\":{\"id\":\"1\",\"label\":\"Count\"},\"drawLinesBetweenPoints\":true,\"mode\":\"stacked\",\"show\":\"true\",\"showCircles\":true,\"type\":\"histogram\",\"valueAxis\":\"ValueAxis-1\"}],\"times\":[],\"type\":\"histogram\",\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"labels\":{\"filter\":false,\"rotate\":0,\"show\":true,\"truncate\":100},\"name\":\"LeftAxis-1\",\"position\":\"left\",\"scale\":{\"mode\":\"normal\",\"type\":\"linear\"},\"show\":true,\"style\":{},\"title\":{\"text\":\"Count\"},\"type\":\"value\"}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"legendOpen\":true}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"issold.keyword\",\"value\":\"no\",\"params\":{\"query\":\"no\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"issold.keyword\":{\"query\":\"no\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
       }
     }
   },
@@ -164,6 +80,174 @@
       "version": 1,
       "kibanaSavedObjectMeta": {
         "searchSourceJSON": "{\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"key\":\"dealdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"dealdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"validdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"validdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"community.keyword\",\"negate\":false,\"params\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里四区\"},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"globalState\"},\"meta\":{\"alias\":\"安慧里\",\"disabled\":true,\"index\":\"90ae6770-755c-11e8-8faf-29cae9b4a4c1\",\"key\":\"community\",\"negate\":false,\"params\":{\"query\":\"安慧里\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里\"},\"query\":{\"match\":{\"community\":{\"query\":\"安慧里\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"type\":\"phrase\",\"key\":\"community.keyword\",\"value\":\"安慧里一区\",\"params\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "75d6c3f0-8751-11e8-b655-7986d74da31f",
+    "_type": "visualization",
+    "_source": {
+      "title": "HousePriceVsHousetype",
+      "visState": "{\"title\":\"HousePriceVsHousetype\",\"type\":\"area\",\"params\":{\"type\":\"area\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"},\"valueAxis\":\"ValueAxis-1\"},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"truncate\":100},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":100},\"title\":{\"text\":\"Average totalprice\"}}],\"seriesParams\":[{\"show\":\"true\",\"type\":\"line\",\"mode\":\"stacked\",\"data\":{\"label\":\"Average totalprice\",\"id\":\"1\"},\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"interpolate\":\"linear\",\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"avg\",\"schema\":\"metric\",\"params\":{\"field\":\"totalprice\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"date_histogram\",\"schema\":\"segment\",\"params\":{\"field\":\"validdate\",\"interval\":\"M\",\"customInterval\":\"2h\",\"min_doc_count\":1,\"extended_bounds\":{}}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "8257ec00-7796-11e8-9800-6dd731635190",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSelling(Top5)",
+      "visState": "{\"title\":\"HouseSelling(Top5)\",\"type\":\"table\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":1,\"direction\":null},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"房型\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":1,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"issold.keyword\",\"value\":\"no\",\"params\":{\"query\":\"no\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"issold.keyword\":{\"query\":\"no\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "4e6d6810-7634-11e8-b105-3d111e9ff17b",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSellingTotal",
+      "visState": "{\"title\":\"HouseSellingTotal\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"issold.keyword\",\"value\":\"no\",\"params\":{\"query\":\"no\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"issold.keyword\":{\"query\":\"no\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    }
+  },
+  {
+    "_id": "f273fba0-8380-11e8-bdc1-017cdf61e293",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSoldInfoSearchTable",
+      "visState": "{\"title\":\"HouseSoldInfoSearchTable\",\"type\":\"searchtables\",\"params\":{\"perPage\":10,\"showMeticsAtAllLevels\":false,\"showPartialRows\":false,\"showTotal\":false,\"sort\":{\"columnIndex\":4,\"direction\":\"desc\"},\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"totalprice.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"dealdate\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":4,\"direction\":\"desc\"}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":false,\"index\":\"ae036d40-8725-11e8-b655-7986d74da31f\",\"key\":\"dealdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"dealdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"validdate\",\"negate\":false,\"params\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"},\"type\":\"range\",\"value\":\"November 1st 2017, 00:00:00.000 to December 30th 2018, 00:00:00.000\"},\"range\":{\"validdate\":{\"gte\":\"2017-11-01\",\"lt\":\"2018-12-30\"}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":null,\"disabled\":true,\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"key\":\"community.keyword\",\"negate\":false,\"params\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里四区\"},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里四区\",\"type\":\"phrase\"}}}},{\"$state\":{\"store\":\"appState\"},\"meta\":{\"alias\":\"安慧里\",\"disabled\":true,\"index\":\"90ae6770-755c-11e8-8faf-29cae9b4a4c1\",\"key\":\"community\",\"negate\":false,\"params\":{\"query\":\"安慧里\",\"type\":\"phrase\"},\"type\":\"phrase\",\"value\":\"安慧里\"},\"query\":{\"match\":{\"community\":{\"query\":\"安慧里\",\"type\":\"phrase\"}}}},{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"type\":\"phrase\",\"key\":\"community.keyword\",\"value\":\"安慧里一区\",\"params\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"},\"disabled\":true,\"negate\":false,\"alias\":null},\"query\":{\"match\":{\"community.keyword\":{\"query\":\"安慧里一区\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    }
+  },
+  {
+    "_id": "ff94b180-876d-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseLatestMonthCommunity",
+      "visState": "{\"title\":\"HouseLatestMonthCommunity\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Count\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Count\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f4e7a680-876c-11e8-991f-f558cf369360\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "58c69250-7567-11e8-8faf-29cae9b4a4c1",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseCommunityVsDistrictTop5",
+      "visState": "{\"title\":\"HouseCommunityVsDistrictTop5\",\"type\":\"pie\",\"params\":{\"addLegend\":true,\"addTooltip\":true,\"isDonut\":true,\"labels\":{\"last_level\":true,\"show\":false,\"truncate\":100,\"values\":true},\"legendPosition\":\"right\",\"type\":\"pie\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"district.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"36d7c450-8725-11e8-b655-7986d74da31f\",\"filter\":[],\"query\":{\"language\":\"kuery\",\"query\":\"\"}}"
+      }
+    }
+  },
+  {
+    "_id": "b4ff10c0-876d-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseLatestMonthDistrictSold",
+      "visState": "{\"title\":\"HouseLatestMonthDistrictSold\",\"type\":\"pie\",\"params\":{\"type\":\"pie\",\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"isDonut\":true,\"labels\":{\"show\":false,\"values\":true,\"last_level\":true,\"truncate\":100}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"district.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f4e7a680-876c-11e8-991f-f558cf369360\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "8137a1b0-876a-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseDropDistrictCommunity",
+      "visState": "{\"title\":\"HouseDropDistrictCommunity\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1531575010412\",\"indexPattern\":\"36d7c450-8725-11e8-b655-7986d74da31f\",\"fieldName\":\"district.keyword\",\"parent\":\"\",\"label\":\"District\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1531575051987\",\"indexPattern\":\"36d7c450-8725-11e8-b655-7986d74da31f\",\"fieldName\":\"community.keyword\",\"parent\":\"1531575010412\",\"label\":\"\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  },
+  {
+    "_id": "a1f343a0-8512-11e8-8aa2-133a73571081",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSelectDist",
+      "visState": "{\"title\":\"HouseSelectDist\",\"type\":\"input_control_vis\",\"params\":{\"controls\":[{\"id\":\"1531317507094\",\"indexPattern\":\"36d7c450-8725-11e8-b655-7986d74da31f\",\"fieldName\":\"district.keyword\",\"parent\":\"\",\"label\":\"\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":20,\"order\":\"desc\"}},{\"id\":\"1531317668059\",\"indexPattern\":\"36d7c450-8725-11e8-b655-7986d74da31f\",\"fieldName\":\"community.keyword\",\"parent\":\"1531317507094\",\"label\":\"\",\"type\":\"list\",\"options\":{\"type\":\"terms\",\"multiselect\":true,\"size\":2000,\"order\":\"desc\"}}],\"updateFiltersOnChange\":false,\"useTimeFilter\":false,\"pinFilters\":false},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{}"
+      }
+    }
+  },
+  {
+    "_id": "5b710a40-876d-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseLatestMonthTotalSold",
+      "visState": "{\"title\":\"HouseLatestMonthTotalSold\",\"type\":\"metric\",\"params\":{\"addTooltip\":true,\"addLegend\":false,\"type\":\"metric\",\"metric\":{\"percentageMode\":false,\"useRanges\":false,\"colorSchema\":\"Green to Red\",\"metricColorMode\":\"None\",\"colorsRange\":[{\"from\":0,\"to\":10000}],\"labels\":{\"show\":true},\"invertColors\":false,\"style\":{\"bgFill\":\"#000\",\"bgColor\":false,\"labelColor\":false,\"subText\":\"\",\"fontSize\":60}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Latest Month Sold\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f4e7a680-876c-11e8-991f-f558cf369360\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "10b4e3d0-876f-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseLatestMonthSoldDetails",
+      "visState": "{\"title\":\"HouseLatestMonthSoldDetails\",\"type\":\"searchtables\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":6,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"title.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"link.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"updatedate\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"f4e7a680-876c-11e8-991f-f558cf369360\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
+      }
+    }
+  },
+  {
+    "_id": "2ba156b0-8774-11e8-991f-f558cf369360",
+    "_type": "visualization",
+    "_source": {
+      "title": "HouseSellingDetails",
+      "visState": "{\"title\":\"HouseSellingDetails\",\"type\":\"searchtables\",\"params\":{\"perPage\":10,\"showPartialRows\":false,\"showMeticsAtAllLevels\":false,\"sort\":{\"columnIndex\":null,\"direction\":null},\"showTotal\":false,\"totalFunc\":\"sum\"},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"community.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":8,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"housetype.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":8,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"4\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"totalprice\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"5\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"link.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":5,\"order\":\"desc\",\"orderBy\":\"1\"}},{\"id\":\"6\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"bucket\",\"params\":{\"field\":\"validdate\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":9,\"order\":\"desc\",\"orderBy\":\"1\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"filter\":[{\"meta\":{\"index\":\"4e4da050-8725-11e8-b655-7986d74da31f\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"phrase\",\"key\":\"issold.keyword\",\"value\":\"no\",\"params\":{\"query\":\"no\",\"type\":\"phrase\"}},\"query\":{\"match\":{\"issold.keyword\":{\"query\":\"no\",\"type\":\"phrase\"}}},\"$state\":{\"store\":\"appState\"}}],\"query\":{\"query\":\"\",\"language\":\"kuery\"}}"
       }
     }
   }
