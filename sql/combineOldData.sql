@@ -91,7 +91,20 @@ DROP TABLE `house`.`rentinfoold`;
 DROP TABLE `house`.`sellinfoold`;
 
 
+#===============create ==========================
+create table house.community
+    SELECT * FROM house.`communityold` WHERE 1=2;
 
+create table house.hisprice
+    SELECT * FROM house.`hispriceold` WHERE 1=2;
+create table house.houseinfo
+    SELECT * FROM house.`houseinfoold` WHERE 1=2;
+create table house.rentinfo
+    SELECT * FROM house.`rentinfoold` WHERE 1=2;
+create table house.sellinfo
+    SELECT * FROM house.`sellinfoold` WHERE 1=2;
+create table house.monthsellinfo
+    SELECT * FROM house.`monthsellinfoold` WHERE 1=2;
 
 
 
