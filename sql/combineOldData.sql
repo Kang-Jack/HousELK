@@ -106,5 +106,20 @@ create table house.sellinfo
 create table house.monthsellinfo
     SELECT * FROM house.`monthsellinfoold` WHERE 1=2;
 
+#===============================================
+ALTER TABLE `house`.`community` 
+ADD UNIQUE INDEX `id_UNIQUE` (`id` ASC);
+
+ALTER TABLE `house`.`houseinfo` 
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+ALTER TABLE `house`.`rentinfo` 
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+ALTER TABLE `house`.`sellinfo` 
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+ALTER TABLE `house`.`monthsellinfo` 
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
 
 
