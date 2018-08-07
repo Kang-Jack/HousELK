@@ -91,20 +91,46 @@ DROP TABLE `house`.`rentinfoold`;
 DROP TABLE `house`.`sellinfoold`;
 
 
-#===============create ==========================
+#===============create ===============================
 create table house.community
     SELECT * FROM house.`communityold` WHERE 1=2;
+ALTER TABLE `house`.`community` 
+ADD PRIMARY KEY (`id`),
+ADD UNIQUE INDEX `id_UNIQUE` (`id` ASC);
+
 
 create table house.hisprice
     SELECT * FROM house.`hispriceold` WHERE 1=2;
+ALTER TABLE `house`.`hisprice` 
+ADD PRIMARY KEY (`houseID`, `totalPrice`);
+
 create table house.houseinfo
     SELECT * FROM house.`houseinfoold` WHERE 1=2;
+ALTER TABLE `house`.`houseinfo` 
+ADD PRIMARY KEY (`houseID`),
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+
+
 create table house.rentinfo
     SELECT * FROM house.`rentinfoold` WHERE 1=2;
+ALTER TABLE `house`.`rentinfo` 
+ADD PRIMARY KEY (`houseID`),
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+
 create table house.sellinfo
     SELECT * FROM house.`sellinfoold` WHERE 1=2;
+ALTER TABLE `house`.`sellinfo` 
+ADD PRIMARY KEY (`houseID`),
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
+
+
 create table house.monthsellinfo
     SELECT * FROM house.`monthsellinfoold` WHERE 1=2;
+ALTER TABLE `house`.`monthsellinfo` 
+ADD PRIMARY KEY (`houseID`),
+ADD UNIQUE INDEX `houseID_UNIQUE` (`houseID` ASC);
 
 #===============================================
 ALTER TABLE `house`.`community` 
